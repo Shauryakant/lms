@@ -1,6 +1,8 @@
 # 🏦 Loan Management System (LMS)
 
-[![Project Demo](https://img.youtube.com/vi/rv4GaoEvZDM/maxresdefault.jpg)](https://youtu.be/rv4GaoEvZDM)
+[![Project Demo](https://markdown-videos-api.jorgenkh.no/youtube/rv4GaoEvZDM)](https://youtu.be/rv4GaoEvZDM)
+
+**▶️ [Click here to watch the full Video Demonstration on YouTube](https://youtu.be/rv4GaoEvZDM)**
 
 This repository contains the complete Loan Management System built with a Node.js/Express backend and a Next.js/React frontend.
 
