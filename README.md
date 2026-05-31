@@ -6,9 +6,8 @@
 
 This repository contains the complete Loan Management System built with a Node.js/Express backend and a Next.js/React frontend.
 
-## 🚀 Live Demo
-- **Frontend App:** https://lms-liard-six.vercel.app
-- **Backend API:** https://lms-42nj.onrender.com
+## 🚀 Live Website
+You can test the fully deployed application here: **[LMS Live Portal](https://lms-liard-six.vercel.app)**
 
 ## 📁 Project Structure
 - `/lms-frontend` - The Next.js frontend application
