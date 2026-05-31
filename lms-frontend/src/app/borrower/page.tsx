@@ -40,6 +40,17 @@ export default function BorrowerPortal() {
       setError("Age must be between 23 and 50 years.");
       return;
     }
+
+    const panRegex = /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/;
+    if (!pan || !panRegex.test(pan)) {
+      setError("Invalid PAN format (e.g. ABCDE1234F).");
+      return;
+    }
+
+    if (employmentMode === "Unemployed") {
+      setError("Applicant cannot be unemployed.");
+      return;
+    }
     
     setStep(2);
   };
