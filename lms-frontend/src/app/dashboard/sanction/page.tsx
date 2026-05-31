@@ -48,7 +48,7 @@ export default function SanctionModule() {
               <tr key={loan._id} className="hover:bg-gray-50 transition">
                 <td className="px-6 py-4">
                   <div className="font-medium text-gray-900">{loan.borrower?.fullName || "Unknown"}</div>
-                  <div className="text-xs text-gray-500 mt-1">PAN: {loan.pan}</div>
+                  <div className="text-xs text-gray-500 mt-1">PAN: {loan.borrower?.pan || "N/A"}</div>
                 </td>
                 <td className="px-6 py-4">
                   <div className="font-semibold text-gray-900">₹{loan.amount?.toLocaleString()}</div>
