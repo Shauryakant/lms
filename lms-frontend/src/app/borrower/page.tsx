@@ -24,7 +24,7 @@ export default function BorrowerPortal() {
   const [tenure, setTenure] = useState<number>(365);
 
   const calculateInterest = () => {
-    return (amount * 0.08 * tenure) / (365 * 100);
+    return Math.round((amount * 12 * tenure) / (365 * 100));
   };
 
   const handleNextStep1 = () => {
@@ -194,7 +194,7 @@ export default function BorrowerPortal() {
                     <span className="font-medium text-blue-900">₹{amount.toLocaleString()}</span>
                   </div>
                   <div className="flex justify-between items-center mb-4">
-                    <span className="text-blue-700">Estimated Interest (8%)</span>
+                    <span className="text-gray-500">Estimated Interest (12%)</span>
                     <span className="font-medium text-blue-900">₹{calculateInterest().toFixed(0)}</span>
                   </div>
                   <div className="pt-4 border-t border-blue-200 flex justify-between items-center">
